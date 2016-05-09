@@ -1,0 +1,8 @@
+<h5>Users' Names:</h5>
+<% @users.each do |user| %>
+<div>
+  <%= link_to user.firstname, admin_user_path(user) %>
+</div>
+
+
+<% end %>
